@@ -1,0 +1,17 @@
+1;sumaResta;5;3;2;6
+2;sumaResta;3;4;8;1
+3;sumaResta;a;3;2
+4;multiPot;1;3;2;9
+5;multiPot;1;3;2;8
+6;triangulos;2;3;5;15
+7;triangulos;2;3;5;14
+8;calculaMe;1;1;1;0
+9;sectores;2;3;5;20
+10;sectores;2;3;5;21
+11;sectores;a;b;c
+12;fibo;2;3;5;13
+13;fibo;3;3;a;6
+14;ecuaciones2;1;3;2;-1
+15;ecuaciones2;5;3;2;-1
+16;distancias;(1,2);(-2,3);(3,-1);9
+17;areaCartesiana;(2,0);(-3,5);(3,2);7
