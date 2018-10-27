@@ -3,8 +3,9 @@ import funciones
 
 
 archivo_csv = 'operaciones_calculadora_personalizada.csv'
+archivo_txt = 'resultados.txt'
 
-def leer_archivo_csv(archivo_csv: str) -> str:
+def leer_archivo_csv(archivo_csv):
     """ Función que tiene por objeto abrir un archivo csv e iterar cada fila,
         en cada fila es posible encontrar 5 o 6 cadenas de caracteres separadas
         por coma (,) en donde:
@@ -25,8 +26,9 @@ def leer_archivo_csv(archivo_csv: str) -> str:
     Returns:
         str: Mensaje del procesamiento de cada fila del archivo csv
     """
-    with open(archivo_csv, newline='') as archivo:
-        contenido = csv.reader(archivo, delimiter=';', quotechar='"')
+    with open(archivo_csv, newline='') as origen, \
+         open(archivo_txt, 'w') as destino:
+        contenido = csv.reader(origen, delimiter=';', quotechar='"')
 
         for indice, fila in enumerate(contenido):
             try:
@@ -82,6 +84,7 @@ def leer_archivo_csv(archivo_csv: str) -> str:
                 salida = funciones.imprimir(
                     numero_fila, nombre_funcion, arg1, arg2, arg3, resultado,
                     mensaje)
+                destino.write("{}\n".format(salida))
                 print(salida)
 
 
