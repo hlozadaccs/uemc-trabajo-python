@@ -206,3 +206,85 @@ Inicio
     devolver resultado, mensaje
 Fin-Función
 ```
+
+### Función semiperimetro
+
+```
+Función semiperimetro(lado_a, lado_b, lado_c):numérico
+Inicio
+    devolver (lado_a + lado_b + lado_c) / 2
+Fin-Función
+```
+
+### Función areaHeron
+
+```
+Función semiperimetro(sp, distancia_ab, distancia_bc, distancia_ca):numérico
+Inicio
+    devolver raiz_cuadrada(sp * (sp - distancia_ab) * (sp - distancia_bc) * (sp - distancia_ca))
+Fin-Función
+```
+
+### Función areaCartesiana
+
+```
+Función areaCartesiana(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR lado_a <- distancia(arg1, arg2)
+    VAR lado_b <- distancia(arg2, arg3)
+    VAR lado_c <- distancia(arg3, arg1)
+
+    VAR sp <- semiperimetro(lado_a, lado_b, lado_c)
+    VAR resultado <- a_decimal(areaHeron(sp, lado_a, lado_b, lado_c))
+    VAR mensaje <- comparar(a_decimal(esperado), resultado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función acortar
+
+```
+Función acortar(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR resultado <- arg1[arg2:arg2+arg3]
+    VAR mensaje <- comparar(esperado, resultado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función insertar
+
+```
+Función insertar(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR izquierda <- arg1[:arg3]
+    VAR derecha   <- arg1[arg3:]
+    VAR resultado <- izquierda + arg2 + derecha
+    VAR mensaje <- comparar(esperado, resultado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función barajar
+
+```
+Función barajar(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR limite <- len(arg1)
+    SI len(arg1) <- len(arg2) ENTONCES
+        limite <- len(arg2)
+    FIN-SI
+
+    VAR resultado = []
+    PARA indice <- limite:
+        resultado[indice] <- arg1[indice]
+
+        SI (indice + 1) % arg3 == 0 ENTONCES
+            resultado[indice] <- arg2.pop(0)
+        FIN-SI
+    FIN-PARA
+    
+    VAR mensaje <- comparar(esperado, resultado)
+    devolver resultado, mensaje
+Fin-Función
+```
