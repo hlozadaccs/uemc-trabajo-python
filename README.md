@@ -1,7 +1,20 @@
 MANUAL DE USUARIO
 =================
 
-El siguiente proyecto intenta dar solución a los requerimientos solicitados en el archivo "Enunciado de Actividad 1. Aplicación python.pdf" y consta de dos archivos **trabajo_python.py** y **funciones.py** ambos programados en Python v3.7 compilado para un sistema operativo Debian GNU/Linux testing (buster)
+El siguiente proyecto intenta dar solución a los requerimientos solicitados en el archivo "Enunciado de Actividad 1. Aplicación python.pdf" y consta de dos archivos **trabajo_python.py** y **funciones.py** ambos programados en Python v3.7 compilado para un sistema operativo Debian GNU/Linux testing (buster).
+
+# CONTENIDO DEL PROYECTO
+
+El proyecto conteniene los siguientes archivos:
+
+1. **diagrama_trabajo_python.png**: Archivo que contiene un pequeño diagrama de flujo del funcionamiento de la aplicación
+1. **Enunciado de Actividad 1. Aplicación python.pdf**: Requerimientos del proyecto.
+1. **funciones.py**: Contiene todas las funciones necesarias para poder ejecutar el proyecto.
+1. **LICENSE**: Licencia Pública General v3
+1. **operaciones_calculadora_personalizada.csv**: Contiene la información de origen necesaria para la ejecución del proyecto.
+1. **Pipfile**: Dependencias del proyecto
+1. **resultados.txt**: Salida producto de la ejecución del proyecto
+1. **trabajo_python.py**: Programa inicial
 
 # EJECUCIÓN
 
@@ -52,3 +65,144 @@ De acuerdo al enunciado el archivo de origen debe tener los siguientes requerimi
 1. El nombre del archivo debe ser **operaciones_calculadora_personalizada.csv**
 1. El separador de columna debe ser el símbolo punto y coma (**;**)
 1. El delimitador de cadena debe ser el símbolo comilla doble (**"**)
+
+# PSEUDOCÓDIGO
+
+## Pseudocódigo función principal:
+
+```
+INICIO
+    VAR archivo_csv <- 'operaciones_calculadora_personalizada.csv'
+    VAR archivo_txt <- 'resultados.txt'
+
+    PARA indice, fila <- archivo_csv:
+        VAR numero_fila        <- fila[0]
+        VAR nombre_funcion     <- fila[1]
+        VAR operando1          <- fila[2]
+        VAR operando2          <- fila[3]
+        VAR operando3          <- fila[4]
+        VAR resultado_esperado <- fila[5]
+
+        VAR resultado, mensaje <- nombre_funcion(operando1, operando2, operando3, esperado)
+        VAR salida <- imprimir(numero_fila, nombre_funcion, operando1, operando2, operando3, resultado, mensaje)
+
+        Escribir(salida)
+        Escribir(archivo_txt, salida)
+    FIN-PARA
+FIN
+```
+
+## Pseudocódigo para las funciones:
+
+### Función comparar
+
+```
+Función comparar(valor1, valor2):cadena de caracteres
+Inicio
+    VAR mensaje <- 'INCORRECTO'
+    SI valor1 = valor2 ENTONCES
+        mensaje <- 'CORRECTO'
+    FIN-SI
+   devolver mensaje
+Fin-Función
+```
+
+### Función sumaResta
+
+```
+Función sumaResta(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR resultado <- arg1 + arg2 - arg3
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función triangulo
+
+```
+Función multiPot(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR resultado <- arg1 * arg2 ** arg3
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función triangulos
+
+```
+Función triangulos(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR resultado <- arg1 * arg2 / 2 * arg3
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función sectores
+
+```
+Función sectores(arg1, arg2, arg3, esperado):tupla
+Inicio
+    CONSTANTE PI = 3.14
+    VAR resultado <- (PI * arg1 ** 2 / arg2) * arg3
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función fibo
+
+```
+Función fibo(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR resultado = 0
+    PARA indice <- arg3:
+        resultado = arg1 + arg2
+        arg1 = arg2
+        arg2 = resultado
+    FIN-PARA
+
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función ecuaciones2
+
+```
+Función fibo(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR resultado = ((-1 * arg2) + raiz_cuadrada(arg2 ** 2 - 4 * arg1 * arg3)) / 2 * arg1
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función distancia
+
+```
+Función distancia(argumento1, argumento2):numérico
+Inicio
+    VAR xa <- argumento1[0]
+    VAR xb <- argumento2[0]
+    VAR ya <- argumento1[1]
+    VAR yb <- argumento2[1]
+
+    VAR resultado = raiz_cuadrada((xb - xa) ** 2 + (yb - ya) ** 2)
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
+
+### Función distancias
+
+```
+Función distancias(arg1, arg2, arg3, esperado):tupla
+Inicio
+    VAR resultado = distancia(arg1, arg2) + distancia(arg2, arg3)
+    VAR mensaje <- comparar(resultado, esperado)
+    devolver resultado, mensaje
+Fin-Función
+```
