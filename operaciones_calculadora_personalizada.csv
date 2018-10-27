@@ -6,12 +6,19 @@
 6;triangulos;2;3;5;15
 7;triangulos;2;3;5;14
 8;calculaMe;1;1;1;0
-9;sectores;2;3;5;20
+9;sectores;2;3;5;20.93
 10;sectores;2;3;5;21
 11;sectores;a;b;c
 12;fibo;2;3;5;13
 13;fibo;3;3;a;6
 14;ecuaciones2;1;3;2;-1
 15;ecuaciones2;5;3;2;-1
-16;distancias;(1,2);(-2,3);(3,-1);9
-17;areaCartesiana;(2,0);(-3,5);(3,2);7
+16;distancias;(1,2);(-2,3);(3,-1);9.57
+16;distancias;(-5,2);(-2,3);(3,-1);9
+16;distancias;(1,9);(2,9);(3,9);9
+17;areaCartesiana;(2,0);(-3,5);(3,2);7.5
+18;acortar;Esto es una frase;5;6;es una
+19;acortar;Esto es una frase;5;2;es una
+20;insertar;Esto es una frase;gran ;12;Esto es una gran frase
+21;barajar;Esto es una frase;gran;2;Esgtor eas nuna frase
+22;barajar;gran;Esto es una frase;1;gErsatno es una frase
