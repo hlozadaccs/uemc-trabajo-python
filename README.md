@@ -3,6 +3,8 @@ MANUAL DE USUARIO
 
 El siguiente proyecto intenta dar solución a los requerimientos solicitados en el archivo "Enunciado de Actividad 1. Aplicación python.pdf" y consta de dos archivos **trabajo_python.py** y **funciones.py** ambos programados en Python v3.7 compilado para un sistema operativo Debian GNU/Linux testing (buster).
 
+Puede visitar mi repo desde el siguiente [enlace](https://github.com/imatsu/uemc-trabajo-python)
+
 # CONTENIDO DEL PROYECTO
 
 El proyecto conteniene los siguientes archivos:
@@ -283,7 +285,7 @@ Inicio
             resultado[indice] <- arg2.pop(0)
         FIN-SI
     FIN-PARA
-    
+
     VAR mensaje <- comparar(esperado, resultado)
     devolver resultado, mensaje
 Fin-Función
