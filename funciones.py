@@ -1,9 +1,6 @@
 import math
 
 
-PI = 3.14 # Constante PI
-
-
 def sumaResta(arg1, arg2, arg3, esperado):
     """ Realiza el cálculo de la función arg1 + arg2 - arg3.
 
@@ -85,6 +82,7 @@ def sectores(arg1, arg2, arg3, esperado):
             str: mensaje de salida.
     """
 
+    PI = 3.14
     arg1, arg2, arg3 = list(map(a_entero, [arg1, arg2, arg3]))
     resultado = a_decimal((PI * arg1 ** 2 / arg2) * arg3)
     mensaje = comparar(a_decimal(esperado), resultado)
