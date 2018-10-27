@@ -28,9 +28,14 @@ def leer_archivo_csv(archivo_csv: str) -> str:
     with open(archivo_csv, newline='') as archivo:
         contenido = csv.reader(archivo, delimiter=';', quotechar='"')
 
-        for fila in contenido:
-            numero_fila, nombre_funcion = fila[:2]
-            arg1, arg2, arg3 = fila[2:5]
+        for indice, fila in enumerate(contenido):
+            try:
+                numero_fila, nombre_funcion = fila[:2]
+                arg1, arg2, arg3 = fila[2:5]
+            except ValueError:
+                print('Imposible procesar fila #{}, argumentos incompletos'
+                      .format(indice))
+                continue
 
             try:
                 """
