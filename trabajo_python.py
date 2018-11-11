@@ -28,7 +28,7 @@ def leer_archivo_csv(archivo_csv):
     """
     with open(archivo_csv, newline='') as origen, \
          open(archivo_txt, 'w') as destino:
-        contenido = csv.reader(origen, delimiter=';', quotechar='"')
+        contenido = csv.reader(origen, delimiter=',', quotechar='"')
 
         for indice, fila in enumerate(contenido):
             try:
