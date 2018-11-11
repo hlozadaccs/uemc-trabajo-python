@@ -441,7 +441,7 @@ def a_entero(valor):
         int: Valor
     """
     try:
-        return int(valor)
+        return math.floor(float(valor))
     except ValueError:
         return '\"{}\"'.format(valor)
 
@@ -458,7 +458,7 @@ def a_decimal(valor):
         decimales
     """
     try:
-        return round(float(valor), 2)
+        return math.ceil(float(valor) * 100) / 100
     except ValueError:
         return '\"{}\"'.format(valor)
 
