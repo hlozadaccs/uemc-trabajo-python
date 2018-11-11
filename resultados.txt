@@ -5,10 +5,10 @@ Operación 3 - sumaResta(13, 13, 13) - resultado: 13 - INCORRECTO
 Operación 4 - sumaResta(9, 8, 7) - resultado: 10 - CORRECTO
 Operación 5 - sumaResta(1, 2, 3) - resultado: 0 - CORRECTO
 Operación 6 - multiPot(1, 3, 2) - resultado: 9 - CORRECTO
-Operación 7 - multiPot(5, 2, 3) - resultado: 40 - INCORRECTO
-Operación 8 - multiPot(3, 2, 4) - resultado: 48 - INCORRECTO
+Operación 7 - multiPot(5, 2, 3) - resultado: 1000 - CORRECTO
+Operación 8 - multiPot(3, 2, 4) - resultado: 1296 - CORRECTO
 Operación 9 - multiPot(1, 7, 2) - resultado: 49 - INCORRECTO
-Operación 10 - multiPot(2, 3, 3) - resultado: 54 - INCORRECTO
+Operación 10 - multiPot(2, 3, 3) - resultado: 216 - CORRECTO
 Operación 11 - triangulos(2, 3, 5) - resultado: 15.0 - CORRECTO
 Operación 12 - triangulos(2.3, 1.6, 2) - resultado: 0 - VALOR INVÁLIDO
 Operación 13 - triangulos(3, 2, 2) - resultado: 6.0 - CORRECTO

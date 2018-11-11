@@ -40,7 +40,7 @@ def multiPot(arg1, arg2, arg3, esperado):
     """
     arg1, arg2, arg3, esperado = list(map(a_entero, [arg1, arg2, arg3,
                                                      esperado]))
-    resultado = a_entero(arg1 * arg2 ** arg3)
+    resultado = a_entero((arg1 * arg2) ** arg3)
     mensaje = comparar(esperado, resultado)
     return resultado, mensaje
 
