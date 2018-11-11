@@ -39,14 +39,14 @@ Operación 8 - multiPot(3, 2, 4) - resultado: 48 - INCORRECTO
 Operación 9 - multiPot(1, 7, 2) - resultado: 49 - INCORRECTO
 Operación 10 - multiPot(2, 3, 3) - resultado: 54 - INCORRECTO
 Operación 11 - triangulos(2, 3, 5) - resultado: 15.0 - CORRECTO
-Operación 12 - triangulos(2.3, 1.6, 2) - resultado: 2.0 - INCORRECTO
+Operación 12 - triangulos(2.3, 1.6, 2) - resultado: 0 - VALOR INVÁLIDO
 Operación 13 - triangulos(3, 2, 2) - resultado: 6.0 - CORRECTO
-Operación 14 - triangulos(1.1, 2.2, 3) - resultado: 3.0 - INCORRECTO
+Operación 14 - triangulos(1.1, 2.2, 3) - resultado: 0 - VALOR INVÁLIDO
 Operación 15 - triangulos(10, 5, 2) - resultado: 50.0 - CORRECTO
 Operación 16 - sectores(2, 3, 5) - resultado: 20.94 - CORRECTO
-Operación 17 - sectores(3.5, 6, 3) - resultado: 14.13 - INCORRECTO
-Operación 18 - sectores(5.55, 5, 1) - resultado: 15.7 - INCORRECTO
-Operación 19 - sectores(2.12, 4, 3) - resultado: 9.42 - INCORRECTO
+Operación 17 - sectores(3.5, 6, 3) - resultado: 0 - VALOR INVÁLIDO
+Operación 18 - sectores(5.55, 5, 1) - resultado: 0 - VALOR INVÁLIDO
+Operación 19 - sectores(2.12, 4, 3) - resultado: 0 - VALOR INVÁLIDO
 Operación 20 - sectores(10, 7, 2) - resultado: 89.72 - CORRECTO
 Operación 21 - fibo(2, 3, 5) - resultado: 5 - INCORRECTO
 Operación 22 - fibo(1, 5, 7) - resultado: 6 - INCORRECTO

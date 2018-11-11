@@ -441,7 +441,7 @@ def a_entero(valor):
         int: Valor
     """
     try:
-        return math.floor(float(valor))
+        return int(valor)
     except ValueError:
         return '\"{}\"'.format(valor)
 
