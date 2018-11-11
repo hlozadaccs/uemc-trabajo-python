@@ -1,25 +1,61 @@
+Operación ID - nombre_operador(operando1, operando2, operando3) - resultado: 0 - VALOR INVÁLIDO
 Operación 1 - sumaResta(5, 3, 2) - resultado: 6 - CORRECTO
-Operación 2 - sumaResta(3, 4, 8) - resultado: -1 - INCORRECTO
-Operación 3 - sumaResta(a, 3, 2) - resultado: 0 - VALOR INVÁLIDO
-Operación 4 - multiPot(1, 3, 2) - resultado: 9 - CORRECTO
-Operación 5 - multiPot(1, 3, 2) - resultado: 9 - INCORRECTO
-Operación 6 - triangulos(2, 3, 5) - resultado: 15.0 - CORRECTO
-Operación 7 - triangulos(2, 3, 5) - resultado: 15.0 - INCORRECTO
-Operación 8 - calculaMe(1, 1, 1) - resultado: 0 - VALOR INVÁLIDO
-Operación 9 - sectores(2, 3, 5) - resultado: 20.93 - CORRECTO
-Operación 10 - sectores(2, 3, 5) - resultado: 20.93 - INCORRECTO
-Operación 11 - sectores(a, b, c) - resultado: 0 - VALOR INVÁLIDO
-Operación 12 - fibo(2, 3, 5) - resultado: 5 - INCORRECTO
-Operación 13 - fibo(3, 3, a) - resultado: 0 - VALOR INVÁLIDO
-Operación 14 - ecuaciones2(1, 3, 2) - resultado: -1.0 - CORRECTO
-Operación 15 - ecuaciones2(5, 3, 2) - resultado: 0 - VALOR INVÁLIDO
-Operación 16 - distancias((1,2), (-2,3), (3,-1)) - resultado: 9.57 - CORRECTO
-Operación 16 - distancias((-5,2), (-2,3), (3,-1)) - resultado: 9.57 - INCORRECTO
-Operación 16 - distancias((1,9), (2,9), (3,9)) - resultado: 2.0 - INCORRECTO
-Operación 17 - areaCartesiana((2,0), (-3,5), (3,2)) - resultado: 7.5 - CORRECTO
-Operación 18 - acortar(Esto es una frase, 5, 6) - resultado: es una - CORRECTO
-Operación 19 - acortar(Esto es una frase, 5, 2) - resultado: es - INCORRECTO
-Operación 20 - insertar(Esto es una frase, gran , 12) - resultado: Esto es una gran frase - CORRECTO
-Operación 21 - barajar(Esto es una frase, gran, 2) - resultado: Esgtor eas nuna frase - CORRECTO
-Operación 22 - barajar(gran, Esto es una frase, 1) - resultado: gErsatno es una frase - CORRECTO
-Operación 23 - sumaResta(5, , ) - resultado: 0 - VALOR INVÁLIDO
+Operación 2 - sumaResta(12, 25, 42) - resultado: -5 - CORRECTO
+Operación 3 - sumaResta(13, 13, 13) - resultado: 13 - INCORRECTO
+Operación 4 - sumaResta(9, 8, 7) - resultado: 10 - CORRECTO
+Operación 5 - sumaResta(1, 2, 3) - resultado: 0 - CORRECTO
+Operación 6 - multiPot(1, 3, 2) - resultado: 9 - CORRECTO
+Operación 7 - multiPot(5, 2, 3) - resultado: 40 - INCORRECTO
+Operación 8 - multiPot(3, 2, 4) - resultado: 48 - INCORRECTO
+Operación 9 - multiPot(1, 7, 2) - resultado: 49 - INCORRECTO
+Operación 10 - multiPot(2, 3, 3) - resultado: 54 - INCORRECTO
+Operación 11 - triangulos(2, 3, 5) - resultado: 15.0 - CORRECTO
+Operación 12 - triangulos(2.3, 1.6, 2) - resultado: 0 - VALOR INVÁLIDO
+Operación 13 - triangulos(3, 2, 2) - resultado: 6.0 - CORRECTO
+Operación 14 - triangulos(1.1, 2.2, 3) - resultado: 0 - VALOR INVÁLIDO
+Operación 15 - triangulos(10, 5, 2) - resultado: 50.0 - CORRECTO
+Operación 16 - sectores(2, 3, 5) - resultado: 20.93 - INCORRECTO
+Operación 17 - sectores(3.5, 6, 3) - resultado: 0 - VALOR INVÁLIDO
+Operación 18 - sectores(5.55, 5, 1) - resultado: 0 - VALOR INVÁLIDO
+Operación 19 - sectores(2.12, 4, 3) - resultado: 0 - VALOR INVÁLIDO
+Operación 20 - sectores(10, 7, 2) - resultado: 89.71 - INCORRECTO
+Operación 21 - fibo(2, 3, 5) - resultado: 5 - INCORRECTO
+Operación 22 - fibo(1, 5, 7) - resultado: 6 - INCORRECTO
+Operación 23 - fibo(2, 7, 10) - resultado: 9 - INCORRECTO
+Operación 24 - fibo(11, 13, 6) - resultado: 24 - INCORRECTO
+Operación 25 - fibo(5, 6, 12) - resultado: 11 - INCORRECTO
+Operación 26 - ecuaciones2(1, 3, 2) - resultado: -1.0 - CORRECTO
+Operación 27 - ecuaciones2(1, 5, 3) - resultado: -0.7 - CORRECTO
+Operación 28 - ecuaciones2(2, 7, 2) - resultado: -1.26 - INCORRECTO
+Operación 29 - ecuaciones2(1, 4, 3) - resultado: -1.0 - INCORRECTO
+Operación 30 - ecuaciones2(2, 9, 1) - resultado: -0.46 - INCORRECTO
+Operación 31 - distancias((1,2), (-2,3), (3,-1)) - resultado: 9.57 - CORRECTO
+Operación 32 - distancias((2,3), (1,5), (-2,-2)) - resultado: 9.85 - INCORRECTO
+Operación 33 - distancias((0,0), (-1,-1), (3,3)) - resultado: 7.07 - INCORRECTO
+Operación 34 - distancias((9,-9), (2,3), (1,5)) - resultado: 16.13 - CORRECTO
+Operación 35 - distancias((0,1), (0,3), (0,8)) - resultado: 7.0 - CORRECTO
+Operación 36 - areaCartesiana((2,0), (-3,5), (3,2)) - resultado: 7.5 - CORRECTO
+Operación 37 - areaCartesiana((2,3), (1,5), (-2,-2)) - resultado: 6.5 - CORRECTO
+Operación 38 - areaCartesiana((0,0), (-1,-1), (3,3)) - resultado: 0 - VALOR INVÁLIDO
+Operación 39 - areaCartesiana((9,-9), (2,3), (1,5)) - resultado: 1.0 - CORRECTO
+Operación 40 - areaCartesiana((0,1), (3,3), (0,8)) - resultado: 10.5 - CORRECTO
+Operación 41 - acortar(Esto es una frase, 5, 6) - resultado: es una - CORRECTO
+Operación 42 - acortar(Esto es una frase, 0, 6) - resultado: Esto e - INCORRECTO
+Operación 43 - acortar(Esto es una frase, 5, 0) - resultado:  - INCORRECTO
+Operación 44 - acortar(Esto es una frase, 2, 2) - resultado: to - INCORRECTO
+Operación 45 - acortar(Esto es una frase, 0, 0) - resultado:  - INCORRECTO
+Operación 46 - insertar(Esto es una frase, gran , 12) - resultado: Esto es una gran frase - CORRECTO
+Operación 47 - insertar(Esto es una frase, no , 5) - resultado: Esto no es una frase - CORRECTO
+Operación 48 - insertar(Esto es una frase, gran, 12) - resultado: Esto es una granfrase - INCORRECTO
+Operación 49 - insertar(Esto es una frase,  bastante larga, 17) - resultado: Esto es una frase bastante larga - CORRECTO
+Operación 50 - insertar(Esto es una frase, , que no media, 11) - resultado: Esto es una, que no media frase - CORRECTO
+Operación 51 - barajar(Esto es una frase, gran, 2) - resultado: Esgtor eas nuna frase - CORRECTO
+Operación 52 - barajar(gran, Esto es una frase, 1) - resultado: gErsatno es una frase - CORRECTO
+Operación 53 - barajar(ABCDE, 12345, 1) - resultado: A1B2C3D4E5 - CORRECTO
+Operación 54 - barajar(camarero, AAAA, 2) - resultado: caAmaAreAroA - CORRECTO
+Operación 55 - barajar(espaciado,        , 1) - resultado: e s p a c i a do - INCORRECTO
+Operación 56 - invertir(Esto es una frase, completo, 2) - resultado: to es una fraseEsto es una fra - INCORRECTO
+Operación 57 - invertir(Esto es una frase, palabra, 1) - resultado: toEs  au asefra - INCORRECTO
+Operación 58 - invertir(1234 5678 9012, palabra, 2) - resultado: 3412 7856 1290 - CORRECTO
+Operación 59 - invertir(1234 5678 9012, completo, 3) - resultado: 4 5678 90121234 5678 9 - INCORRECTO
+Operación 60 - invertir(Esto es una frase, palabra, 2) - resultado: toEs  au asefra - INCORRECTO
