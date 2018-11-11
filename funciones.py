@@ -356,6 +356,39 @@ def barajar(arg1, arg2, arg3, esperado):
     return resultado, mensaje
 
 
+def invertir_palabra(cadena, cantidad):
+    cadena = str(cadena)
+    cantidad = int(cantidad)
+    return '{}{}'.format(cadena[cantidad:], cadena[0:-cantidad])
+
+
+def invertir(arg1, arg2, arg3, esperado):
+    """
+    Args:
+        arg1 (str): Operando 1, cadena de caracteres
+        arg2 (str): Operando 2, cadena de caracteres
+        arg3 (str): Operando 3, cada cuanto se realizará la inversión
+        esperado (str): Valor esperado
+
+    Returns:
+        tuple (str, str):
+            str: cadena de caracteres
+            str: mensaje de salida.
+    """
+
+    # transformo a entero el argumento3
+    arg3 = a_entero(arg3)
+    if arg2 == 'completo':
+        resultado = invertir_palabra(arg1, arg3)
+    elif arg2 == 'palabra':
+        resultado = ' '.join([invertir_palabra(x, 2) for x in arg1.split(' ')])
+    else:
+        raise ValueError('El modo no está permitido')
+
+    mensaje = comparar(resultado, esperado)
+    return resultado, mensaje
+
+
 def comparar(valor1, valor2):
     """ Compara dos valores desconocidos, y retorna un mensaje si el valor1 es
         igual o diferente del valor2, el tipo de datos es controlado por la
