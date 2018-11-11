@@ -19,11 +19,11 @@ Operación 17 - sectores(3.5, 6, 3) - resultado: 0 - VALOR INVÁLIDO
 Operación 18 - sectores(5.55, 5, 1) - resultado: 0 - VALOR INVÁLIDO
 Operación 19 - sectores(2.12, 4, 3) - resultado: 0 - VALOR INVÁLIDO
 Operación 20 - sectores(10, 7, 2) - resultado: 89.72 - CORRECTO
-Operación 21 - fibo(2, 3, 5) - resultado: 5 - INCORRECTO
-Operación 22 - fibo(1, 5, 7) - resultado: 6 - INCORRECTO
-Operación 23 - fibo(2, 7, 10) - resultado: 9 - INCORRECTO
-Operación 24 - fibo(11, 13, 6) - resultado: 24 - INCORRECTO
-Operación 25 - fibo(5, 6, 12) - resultado: 11 - INCORRECTO
+Operación 21 - fibo(2, 3, 5) - resultado: 13 - CORRECTO
+Operación 22 - fibo(1, 5, 7) - resultado: 45 - CORRECTO
+Operación 23 - fibo(2, 7, 10) - resultado: 280 - CORRECTO
+Operación 24 - fibo(11, 13, 6) - resultado: 98 - INCORRECTO
+Operación 25 - fibo(5, 6, 12) - resultado: 809 - CORRECTO
 Operación 26 - ecuaciones2(1, 3, 2) - resultado: -1.0 - CORRECTO
 Operación 27 - ecuaciones2(1, 5, 3) - resultado: -0.69 - INCORRECTO
 Operación 28 - ecuaciones2(2, 7, 2) - resultado: -1.25 - INCORRECTO

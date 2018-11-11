@@ -111,7 +111,7 @@ def fibo(arg1, arg2, arg3, esperado):
         raise ValueError('El argumento no cumple los requerimientos básicos')
 
     if arg3 > 2:
-        arg3 =- 2
+        arg3 = arg3 - 2
 
     resultado = arg1 + arg2
     for indice in range(arg3):
