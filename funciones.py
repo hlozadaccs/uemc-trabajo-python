@@ -458,7 +458,10 @@ def a_decimal(valor):
         decimales
     """
     try:
-        return math.ceil(float(valor) * 100) / 100
+        resultado = math.ceil(float(valor) * 100) / 100
+        if float(valor) < 0:
+            resultado = math.floor(float(valor) * 100) / 100
+        return resultado
     except ValueError:
         return '\"{}\"'.format(valor)
 
